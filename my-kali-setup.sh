@@ -13,6 +13,9 @@ virtualenv -p $(which python) ~/.pyenv/python3
 source ~/.pyenv/python3/bin/activate
 pip install git+https://github.com/Tib3rius/AutoRecon.git
 
+# note-to-self how I run autorecon for quicker scanning
+# autorecon -o . --exclude-tags=long --port-scans=all-tcp-ports <target>
+
 # install impacket
 pip install impacket
 
@@ -42,4 +45,4 @@ sudo apt install -y \
 	bloodhound \
 	neo4j \
 	shutter \
-  chromium
+  	chromium
