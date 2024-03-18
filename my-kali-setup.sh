@@ -4,7 +4,7 @@
 sudo apt update && sudo apt -y upgrade
 
 # autorecon reqs
-sudo apt install seclists curl dnsrecon enum4linux feroxbuster gobuster impacket-scripts nbtscan nikto nmap onesixtyone oscanner redis-tools smbclient smbmap snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf virtualenv
+sudo apt install -y seclists curl dnsrecon enum4linux feroxbuster gobuster impacket-scripts nbtscan nikto nmap onesixtyone oscanner redis-tools smbclient smbmap snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf virtualenv
 
 # virtual python environment
 virtualenv -p $(which python) ~/.pyenv/python3
