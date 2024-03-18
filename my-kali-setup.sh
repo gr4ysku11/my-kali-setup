@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # update system
-sudo apt update && apt -y upgrade
+sudo apt update && sudo apt -y upgrade
 
 # autorecon reqs
 sudo apt install seclists curl dnsrecon enum4linux feroxbuster gobuster impacket-scripts nbtscan nikto nmap onesixtyone oscanner redis-tools smbclient smbmap snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf virtualenv
@@ -37,7 +37,7 @@ codium --install-extension vscodevim.vim && codium --install-extension ms-python
 	codium --install-extension dendron.dendron-paste-image && codium --install-extension ms-vscode.cpptools
 
 # install other packages
-apt install -y \
+sudo apt install -y \
 	keepassxc \
 	bloodhound \
 	neo4j \
