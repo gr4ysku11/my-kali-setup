@@ -42,7 +42,12 @@ sudo apt install -y \
 	bloodhound \
 	neo4j \
 	shutter \
-  	chromium
+  	chromium \
+	xrdp
+
+# enable rdp server
+sudo systemctl enable xrdp
+sudo systemctl start xrdp
 
 # my random notes
 #
@@ -54,3 +59,6 @@ sudo apt install -y \
 #
 # resolution resize for qemu vm
 # xrandr --output Virtual-1 --auto
+# 
+# converting qemu vm image to ova
+# qemu-img convert -fmt ova <kali-vm-img.qcow2> <kali-vm-img.ova>
