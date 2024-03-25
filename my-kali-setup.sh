@@ -13,9 +13,6 @@ virtualenv -p $(which python) ~/.pyenv/python3
 source ~/.pyenv/python3/bin/activate
 pip install git+https://github.com/Tib3rius/AutoRecon.git
 
-# note-to-self how I run autorecon for quicker scanning
-# autorecon -o . --exclude-tags=long --port-scans=all-tcp-ports <target>
-
 # install impacket
 pip install impacket
 
@@ -46,3 +43,14 @@ sudo apt install -y \
 	neo4j \
 	shutter \
   	chromium
+
+# my random notes
+#
+# rdp with dynamic window resize
+# xfreerdp /u:USER /v:IP /dynamic-resolution
+#
+# autorecon for quicker scanning
+# autorecon -o . --exclude-tags=long --port-scans=all-tcp-ports <target>
+#
+# resolution resize for qemu vm
+# xrandr --output Virtual-1 --auto
