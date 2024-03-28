@@ -60,5 +60,5 @@ sudo systemctl start xrdp
 # resolution resize for qemu vm
 # xrandr --output Virtual-1 --auto
 # 
-# convert vm to ova
-# import vm (vdi) into virtualbox, then export as ova
+# convert vmware image to ova
+# ovftool kali.vmx kali.ova
