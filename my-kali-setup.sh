@@ -49,6 +49,17 @@ sudo apt install -y \
 sudo systemctl enable xrdp
 sudo systemctl start xrdp
 
+echo "******CHANGE PASSWORD******"
+passwd kali
+
+$ip = $(hostname -I)
+echo "xfreerdp /u:kali /v:$ip/dynamic-resolution"
+echo "Press any key to continue..."
+read -n 1
+
+# logout for rdp access
+sudo systemctl restart display-manager
+
 # my random notes
 #
 # rdp with dynamic window resize
