@@ -55,15 +55,12 @@ passwd kali
 $ip = $(hostname -I)
 echo "xfreerdp /u:kali /v:$ip/dynamic-resolution"
 echo "Press any key to continue..."
-read -n 1
+read -s -n 1
 
 # logout for rdp access
 sudo systemctl restart display-manager
 
 # my random notes
-#
-# rdp with dynamic window resize
-# xfreerdp /u:USER /v:IP /dynamic-resolution
 #
 # autorecon for quicker scanning
 # autorecon -o . --exclude-tags=long --port-scans=all-tcp-ports <target>
