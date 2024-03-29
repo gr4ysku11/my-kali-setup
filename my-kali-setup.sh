@@ -52,7 +52,7 @@ sudo systemctl start xrdp
 echo "******CHANGE PASSWORD******"
 passwd kali
 
-$ip = $(hostname -I)
+ip = $(hostname -I)
 echo "xfreerdp /u:kali /v:$ip/dynamic-resolution"
 echo "Press any key to continue..."
 read -s -n 1
